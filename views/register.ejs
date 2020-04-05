@@ -1,0 +1,19 @@
+<%- include("owner/header") %>
+
+
+<div class="mt-5">
+
+
+
+    <div id="register" class="formbox">
+        <h1>Sign up!</h1>
+            <form action="/register" method="POST">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <input type="text" name="modCode" placeholder="Moderator Code">
+                <input type="text" name="adminCode" placeholder="Admin Code">
+                <button type="Submit" class="btn btn-sm btn-success">Submit</button>
+            </form>
+    </div>
+</div>
+<%- include("owner/footer") %>

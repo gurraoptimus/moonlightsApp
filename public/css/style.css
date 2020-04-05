@@ -1,0 +1,112 @@
+/* BODY */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/purple.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* LOGIN PAGE */
+.formbox{
+    width: 320px;
+    height: 420px;
+    background: #000000ab;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.profile{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 50px);
+}
+h1{
+  margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;
+}
+.formbox p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+}
+
+.formbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.formbox input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #ffff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #ffff;
+  font-size: 16px;
+}
+.formbox input[type="submit"]
+{
+border: none;
+outline: none;
+background: #0000;
+height: 40px;
+color: #ffff;
+font-size: 18px;
+border-radius: 20px;
+}
+
+.formbox input[type="submit"]:hover
+{
+  cursor:pointer;
+  background: #0000;
+  color: #ffffff;
+}
+.formbox button{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+  position: relative;
+  margin-left: 105px;}
+
+
+.formbox b
+
+/* LOGIN PAGE END */
+
+/* REGISTER PAGE */
+
+.formbox > h1 {
+  font-size: 20px;
+  color: white;
+}
+
+#register{
+  height: 320px;
+}
+
+#register > h1 {
+  font-size: 30px;
+}
+
+/* NAVBAR */
+
+.logo-image {
+  width: 320px;
+  height: 70px;
+  overflow: hidden;
+  margin-top: -6px;
+}
