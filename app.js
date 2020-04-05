@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/my_App',
 const app = express();
 
 app.use(require('express-session')({
-    secret:'Jag älskar donken',
+    secret:'Jag älskar donkenet',
     resave: false,
     saveUninitialized: false
 }));
