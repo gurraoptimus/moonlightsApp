@@ -8,7 +8,7 @@ const
         path                    = require('path');
         User                    = require('./models/user')
 
-mongoose.connect('mongodb://localhost/my_App', 
+mongoose.connect('mongodb+srv://gurraoptimus:Mormor6133@cluster0-oe8hv.mongodb.net/my_app?retryWrites=true&w=majority', 
     {   useNewUrlParser: true,
         useUnifiedTopology: true
 
