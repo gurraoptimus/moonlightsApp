@@ -3,7 +3,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(../img/logotype.jpg);
+    background-image: url(../img/logotype.jpg) !important;
     background-size: cover;
     background-position: center;
     font-family: sans-serif;

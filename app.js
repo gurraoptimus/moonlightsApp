@@ -53,6 +53,10 @@ app.get('/owner', isLoggedIn, (req, res) => {
     res.render('owner')
 });
 
+app.get('/store', (req, res) => {
+    res.render('owner/store')
+});
+
 // Auth Routes
 
 app.get('/register', (req, res) => {
