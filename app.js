@@ -57,11 +57,19 @@ app.get('/store', (req, res) => {
     res.render('owner/store')
 });
 
+app.get('/admin', (req, res) => {
+    res.render('owner/admin')
+});
+
+app.get('/moderator', (req, res) => {
+    res.render('owner/moderator')
+});
 // Auth Routes
 
 app.get('/register', (req, res) => {
     res.render('register')
 })
+
 //hanterar användar registrering
 app.post('/register', (req, res) => {
     req.body.username
