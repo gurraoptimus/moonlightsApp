@@ -57,11 +57,11 @@ app.get('/store', (req, res) => {
     res.render('owner/store')
 });
 
-app.get('/admin', (req, res) => {
+app.get('/admin',isLoggedIn,(req, res) => {
     res.render('owner/admin')
 });
 
-app.get('/moderator', (req, res) => {
+app.get('/moderator',isLoggedIn,(req, res) => {
     res.render('owner/moderator')
 });
 // Auth Routes
