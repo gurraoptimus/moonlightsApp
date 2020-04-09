@@ -70,6 +70,9 @@ app.get('/register', (req, res) => {
     res.render('register')
 })
 
+app.get('/lost-account', (req, res) => {
+    res.render('Lost-account')
+});
 //hanterar användar registrering
 app.post('/register', (req, res) => {
     req.body.username
