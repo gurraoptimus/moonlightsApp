@@ -49,20 +49,20 @@ app.get('/', (req, res) => {
     res.render('index')
 });
 
-app.get('/owner', isLoggedIn, (req, res) => {
-    res.render('owner')
+app.get('/home', isLoggedIn, (req, res) => {
+    res.render('home')
 });
 
 app.get('/store', (req, res) => {
-    res.render('owner/store')
+    res.render('home/store')
 });
 
 app.get('/admin',isLoggedIn,(req, res) => {
-    res.render('owner/admin')
+    res.render('home/admin')
 });
 
 app.get('/moderator',isLoggedIn,(req, res) => {
-    res.render('owner/moderator')
+    res.render('home/moderator')
 });
 // Auth Routes
 
@@ -91,7 +91,7 @@ app.post('/register', (req, res) => {
             return res.render('register', {error: err.message});
         } 
         passport.authenticate('local')(req, res, () => {
-            res.redirect('/owner')
+            res.redirect('/home')
         });
     });
 });
@@ -106,7 +106,7 @@ app.get('/login', (req, res) => {
 //login logic
 // middleware
 app.post('/', passport.authenticate('local', {
-        successRedirect: '/owner',
+        successRedirect: '/home',
         failureRedirect: '/#'
     }), (req, res) => {
 });
