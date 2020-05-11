@@ -4,17 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <!-- CUSTOM CSS -->
-         <% if (currentUser && currentUser.isAdmin) { %>
+        <% if (currentUser && currentUser.isAdmin) { %>
             <link rel="stylesheet" type="text/css" href="css/home.css">
-       <% } else { %>
+        <% } else if(currentUser && currentUser.isMod) { %>
+
+            <link rel="stylesheet" type="text/css" href="css/moderator.css">
+        <%} else{ %>
             <link rel="stylesheet" type="text/css" href="css/style.css">
            
             <link rel="stylesheet" type="text/css" href="css/store.css">
             
             <link rel="stylesheet" type="text/css" href="css/admin.css">
-            
-            <link rel="stylesheet" type="text/css" href="css/moderator.css">
-            
+                                    
             <link rel="stylesheet" type="text/css" href="css/lost-account.css">
             <% } %> 
             <!-- BOOTSTRAP CSS -->
