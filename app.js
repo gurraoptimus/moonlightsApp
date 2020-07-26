@@ -46,7 +46,11 @@ app.use(function(req, res, next) {
 //==================================
 
 app.get('/', (req, res) => {
-    res.render('index')
+   res.render('moonlightsstore')
+});
+
+app.get('/index', (req, res) => {
+   res.render('index')
 });
 
 app.get('/home', isLoggedIn, (req, res) => {

@@ -1,0 +1,125 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+html, body {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        background: linear-gradient(63deg, #b40fa6, #701ece);
+        background-size: 400% 400%;
+
+        -webkit-animation: blurp 18s ease infinite;
+        -moz-animation: blurp 18s ease infinite;
+        animation: blurp 18s ease infinite;
+      }
+
+      #particles {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+
+      .container {
+        z-index: 2;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        mix-blend-mode: screen;
+        background: black;
+      }
+
+      @-webkit-keyframes blurp {
+     0%{background-position:0% 5%}
+     50%{background-position:100% 96%}
+     100%{background-position:0% 5%}
+    }
+    @-moz-keyframes blurp {
+     0%{background-position:0% 5%}
+     50%{background-position:100% 96%}
+     100%{background-position:0% 5%}
+    }
+    @keyframes blurp {
+     0%{background-position:0% 5%}
+     50%{background-position:100% 96%}
+     100%{background-position:0% 5%}
+    }
+
+/* HEADER */
+
+header{
+background-image: url(../img/𝕄𝕆𝕆ℕ𝕃𝕀𝔾ℍ𝕋𝕊.jpg);
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+
+.nav-bar
+{
+background: rgba( 0, 0, 0, 0.5);
+height: 80px;
+}
+.moon_light{
+  margin: -40px 40px;
+  height: 160px;
+}
+
+.menu{
+  float: right;
+  list-style: none;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.menu li a{
+text-decoration: none;
+color: #fff;
+padding: 5px 10px;
+font-family: sans-serif;
+letter-spacing: 2px;
+border: 1px solid #fff;
+}
+
+.menu li a:hover{
+  background: #fff;
+  transition: .4s;
+  color: #000;
+}
+
+/* MAIN BODY */
+
+.Welcome {
+  position: relative;
+  text-align: center;
+  top: 160px;
+  font-family: sans-serif;
+  color: white;
+  padding: 5px;
+}
+
+.Welcome h1 {
+  font-size: 42px;
+  margin: 25px;
+}
+
+.btn {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 5px;
+  padding: 7px 5px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn1:hover{
+  color: black;
+  background: white;
+}
