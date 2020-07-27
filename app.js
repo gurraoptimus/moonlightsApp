@@ -4,7 +4,9 @@ const
         passport                = require('passport'),
         bodyParser              = require('body-parser'),
         LocalStrategy           = require('passport-local'),
-        passportLocalMongoose   = require('passport-local-mongoose')
+        passportLocalMongoose   = require('passport-local-mongoose');
+const user = require('./models/user');
+const { userInfo } = require('os');
         path                    = require('path');
         User                    = require('./models/user')
 
@@ -45,9 +47,14 @@ app.use(function(req, res, next) {
 // ROUTES
 //==================================
 
+app.get('/about', (req, res) => {
+    res.render('about')
+ });
+
+
 app.get('/contact', (req, res) => {
     res.render('contact')
- });
+});
  
 
 app.get('/', (req, res) => {
@@ -62,7 +69,7 @@ app.get('/home', isLoggedIn, (req, res) => {
     res.render('home')
 });
 
-app.get('/store', (req, res) => {
+app.get('/store',(req, res) => {
     res.render('home/store')
 });
 

@@ -103,6 +103,9 @@ border: 1px solid #fff;
   color: white;
   padding: 5px;
 }
+.Welcome a {
+  color: white;
+}
 
 .Welcome h1 {
   font-size: 42px;
