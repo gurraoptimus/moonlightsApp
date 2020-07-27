@@ -47,21 +47,21 @@ app.use(function(req, res, next) {
 // ROUTES
 //==================================
 
-app.get('/about', (req, res) => {
-    res.render('about')
- });
+//app.get('/about', (req, res) => {
+    // res.render('about')
+//});
 
 
-app.get('/contact', (req, res) => {
-    res.render('contact')
-});
+//app.get('/contact', (req, res) => {
+    // res.render('contact')
+//});
  
 
-app.get('/', (req, res) => {
-   res.render('moonlightsstore')
-});
+//app.get('/', (req, res) => {
+  // res.render('moonlightsstore')
+//});
 
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
    res.render('index')
 });
 
