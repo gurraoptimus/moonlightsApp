@@ -5,8 +5,8 @@ const
         bodyParser              = require('body-parser'),
         LocalStrategy           = require('passport-local'),
         passportLocalMongoose   = require('passport-local-mongoose');
-const user = require('./models/user');
-const { userInfo } = require('os');
+
+
         path                    = require('path');
         User                    = require('./models/user')
 
@@ -19,7 +19,7 @@ mongoose.connect('mongodb+srv://gurraoptimus:Mormor6133@cluster0-oe8hv.mongodb.n
 const app = express();
 
 app.use(require('express-session')({
-    secret:'Jag älskar donken',
+    secret:'I love mcdonalds',
     resave: false,
     saveUninitialized: false
 }));
