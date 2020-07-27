@@ -45,6 +45,10 @@ app.use(function(req, res, next) {
 // ROUTES
 //==================================
 
+app.get('/contact', (req, res) => {
+    res.render('contact')
+ });
+ 
 
 app.get('/', (req, res) => {
    res.render('moonlightsstore')
