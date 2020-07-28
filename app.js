@@ -47,18 +47,22 @@ app.use(function(req, res, next) {
 // ROUTES
 //==================================
 
-// app.get('/about', (req, res) => {
-   // res.render('about')
+// app.get('/members', (req, res) => {
+    // res.render('members')
+// });
+
+ // app.get('/about', (req, res) => {
+    // res.render('about')
 // });
 
 
-// app.get('/contact', (req, res) => {
+ // app.get('/contact', (req, res) => {
     // res.render('contact')
-// });
+ // });
  
 
 // app.get('/', (req, res) => {
-    // res.render('moonlightsstore')
+   // res.render('webb')
 // });
 
 app.get('/', (req, res) => {
