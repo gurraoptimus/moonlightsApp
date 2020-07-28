@@ -61,11 +61,11 @@ app.use(function(req, res, next) {
  // });
  
 
-// app.get('/', (req, res) => {
-   // res.render('webb')
-// });
-
 app.get('/', (req, res) => {
+   res.render('webb')
+});
+
+app.get('/index', (req, res) => {
    res.render('index')
 });
 

@@ -83,7 +83,9 @@ border-radius: 20px;
   margin-left: 105px;}
 
 
-.formbox b
+.formbox a {
+  color: gray;
+}
 
 /* LOGIN PAGE END */
 
