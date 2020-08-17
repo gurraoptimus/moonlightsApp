@@ -8,7 +8,17 @@ body{
     background-position: center;
     font-family: sans-serif;
 }
-
+#particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  z-index: 0;
+}
+header {
+  position: relative;
+  z-index:2;
+}
 /* LOGIN PAGE */
 .formbox{
     width: 320px;
