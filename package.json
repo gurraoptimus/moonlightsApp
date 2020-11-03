@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "version": "1.0.0",
+  "version": "2.2.1",
   "description": "login demo",
   "main": "app.js",
   "scripts": {
