@@ -47,9 +47,6 @@ app.use(function(req, res, next) {
 // ROUTES
 //==================================
 
- app.get('/members',isLoggedIn, (req, res) => {
-     res.render('members') 
-  });
 
  app.get('/about', (req, res) => {
     res.render('about') 
@@ -90,9 +87,10 @@ app.get('/register', (req, res) => {
     res.render('register')
 })
 
-app.get('/lost-account', (req, res) => {
-    res.render('Lost-account')
-});
+app.get('/members', (req, res) => {
+    res.render('members') 
+ });
+ 
 //hanterar användar registrering
 app.post('/register', (req, res) => {
     req.body.username
