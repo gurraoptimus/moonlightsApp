@@ -22,13 +22,14 @@
               <% if (currentUser && currentUser.isAdmin) { %>
               <a class="dropdown-item" href="admin">Admin</a>             
               <a class="dropdown-item" href="moderator">Moderator</a>
+              <a class="dropdown-item" href="members">members</a>
               <div class="dropdown-divider"></div>
               
 
               <% } else if(currentUser && currentUser.isMod){ %>
               <a class="dropdown-item" href="moderator">Moderator</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="members">link me</a>
+              <a class="dropdown-item" href="members">members/a>
 
              <% } else { %>             
               <div class="dropdown-divider"></div>
