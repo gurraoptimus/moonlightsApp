@@ -1,12 +1,12 @@
 {
   "name": "myapp",
-  "version": "2.2.1",
+  "version": "3.2.3",
   "description": "login demo",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Gustav A",
+  "author": "Gurraoptimus",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

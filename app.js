@@ -83,8 +83,8 @@ app.get('/moderator',isLoggedIn,(req, res) => {
 });
 // Auth Routes
 
-app.get('/register', (req, res) => {
-    res.render('register')
+app.get('/sign-up', (req, res) => {
+    res.render('Sign-up')
 })
 
 app.get('/members', (req, res) => {
@@ -92,7 +92,7 @@ app.get('/members', (req, res) => {
  });
  
 //hanterar användar registrering
-app.post('/register', (req, res) => {
+app.post('/sign-up', (req, res) => {
     req.body.username
     req.body.password
     const newUser = new User({username: req.body.username});
@@ -106,7 +106,7 @@ app.post('/register', (req, res) => {
     User.register(newUser, req.body.password, (err, user) => {
         if(err){
             console.log(err);
-            return res.render('register', {error: err.message});
+            return res.render('sign-up', {error: err.message});
         } 
         passport.authenticate('local')(req, res, () => {
             res.redirect('/home')

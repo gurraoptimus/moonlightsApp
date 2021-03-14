@@ -3,11 +3,11 @@
 
 <div class="mt-5">
 
+</div>
 
-
-    <div id="register" class="formbox">
+    <div id="Sign-up" class="formbox">
         <h1>Sign up!</h1>
-            <form action="/register" method="POST">
+            <form action="/Sign-up" method="POST">
                 <input type="text" name="username" placeholder="username">
                 <input type="password" name="password" placeholder="password">
                 <input type="text" name="modCode" placeholder="Moderator Code">
@@ -15,5 +15,15 @@
                 <button type="Submit" class="btn btn-sm btn-success">Submit</button>
             </form>
     </div>
+    
+    <div class="nav-bar">
+        <a href="/" class="home"><img src="img/moonlightsstore.png" class="moonlightsstore"></a>
+          <ul class="menu">
+            <li><a href="index">login</a></li>
+            <li><a href="sign-up">sign up</a></li>
+            <li><a href="contact">contact</a></li>
+            <li><a href="about">about</a></li>
+          </ul>
+       
 </div>
 <%- include("home/footer") %>
