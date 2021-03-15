@@ -84,10 +84,10 @@ app.get('/moderator',isLoggedIn,(req, res) => {
 // Auth Routes
 
 app.get('/sign-up', (req, res) => {
-    res.render('Sign-up')
+    res.render('sign-up')
 })
 
-app.get('/members', (req, res) => {
+app.get('/members',(req, res) => {
     res.render('members') 
  });
  
