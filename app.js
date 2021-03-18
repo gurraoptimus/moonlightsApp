@@ -83,14 +83,19 @@ app.get('/moderator',isLoggedIn,(req, res) => {
 });
 // Auth Routes
 
+app.get('/update',isLoggedIn,(req, res) => {
+    res.render('home/update')
+});
+
 app.get('/sign-up', (req, res) => {
     res.render('sign-up')
-})
+});
 
 app.get('/members',(req, res) => {
     res.render('members') 
  });
  
+
 //hanterar användar registrering
 app.post('/sign-up', (req, res) => {
     req.body.username
