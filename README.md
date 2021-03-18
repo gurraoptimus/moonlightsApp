@@ -4,6 +4,6 @@
 
 # THIS APP IS verified✔ 
 # moonlightsApp
-# this app is e to buy a sweater there in store  
+# this app must buy a sweater there in store
 
 # //==================================
